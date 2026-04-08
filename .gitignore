@@ -1,1 +1,6 @@
 venv/
+
+__pycache__/
+
+01/uploads/*
+!01/uploads/.gitkeep
