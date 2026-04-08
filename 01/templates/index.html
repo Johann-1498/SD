@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+    <title>File Upload</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.1/min/dropzone.min.css">
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        .thumbnails img { width: 64px; margin: 5px; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <h1>Subir archivos con Flask + Dropzone</h1>
+
+    <form action="{{ url_for('upload_files') }}" class="dropzone" id="myDropzone"></form>
+
+    <h2>Archivos subidos</h2>
+    <div class="thumbnails">
+        {% for file in files %}
+            <img src="{{ url_for('upload', filename=file) }}">
+        {% endfor %}
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.1/min/dropzone.min.js"></script>
+    <script>
+        Dropzone.options.myDropzone = {
+            paramName: "file",
+            maxFilesize: 2, // MB
+            acceptedFiles: "image/jpeg,image/png,image/gif",
+            init: function() {
+                this.on("success", function() {
+                    location.reload(); // recarga para mostrar la nueva imagen
+                });
+            }
+        };
+    </script>
+</body>
+</html>
