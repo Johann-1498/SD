@@ -11,8 +11,10 @@ services:
       - traefik_proxy
     labels:
       - "traefik.enable=true"
+      # Redirección HTTP a HTTPS a cargo de Traefik y definición del router HTTPS
       - "traefik.http.routers.flask-backend.rule=Host(`flask.rvaldiviase.me`)"
-      - "traefik.http.routers.flask-backend.entrypoints=web"
+      - "traefik.http.routers.flask-backend.entrypoints=websecure"
+      - "traefik.http.routers.flask-backend.tls=true"
       - "traefik.http.routers.flask-backend.tls.certresolver=cloudflare"
       - "traefik.http.services.flask-backend.loadbalancer.server.port=5000"
 
