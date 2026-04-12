@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galería de Imágenes con Marco Autenticada</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Galería y Generador de Bordes</h1>
+      <p>
+        Sube una foto (JPG, GIF, JPEG). Se guardará en la carpeta de subidas con
+        un marco y aparecerá en el listado debajo.
+      </p>
+
+      <!-- Form section -->
+      <form id="imageForm" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="imageInput">Seleccionar Imagen (JPG, JPEG, GIF):</label>
+          <input
+            type="file"
+            id="imageInput"
+            name="image"
+            accept=".jpg, .jpeg, .gif"
+            required />
+        </div>
+
+        <div class="form-group">
+          <label for="borderSize">Ancho del borde (px):</label>
+          <input
+            type="number"
+            id="borderSize"
+            name="size"
+            value="20"
+            min="1"
+            max="100" />
+        </div>
+
+        <div class="form-group">
+          <label for="borderColor">Color del borde:</label>
+          <input type="color" id="borderColor" name="color" value="#000000" />
+        </div>
+        <!-- SE RETIRÓ EL INPUT DEL SERVER URL (Ahora usa .env) -->
+        <button type="submit" id="submitBtn">Subir Imagen con Borde</button>
+      </form>
+
+      <!-- Error/Message display -->
+      <div id="messageBox" class="hidden"></div>
+    </div>
+
+    <!-- Image Gallery section -->
+    <div class="gallery-container container">
+      <h2>Imágenes Subidas</h2>
+      <div class="button-group">
+        <button id="refreshBtn" class="refresh-btn">Actualizar Galería</button>
+        <button id="deleteAllBtn" class="delete-btn">Eliminar Todas</button>
+      </div>
+      <div id="gallery" class="gallery"></div>
+    </div>
+
+    <!-- Configuración inyectada por Docker vía .env -->
+    <script src="config.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

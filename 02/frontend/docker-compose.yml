@@ -1,0 +1,9 @@
+services:
+  frontend:
+    build: .
+    ports:
+      - "80:80"
+    environment:
+      - SERVER_URL=${SERVER_URL:-http://localhost:5000}
+      - API_TOKEN=${API_TOKEN:-admin123}
+    restart: always
