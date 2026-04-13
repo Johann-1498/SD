@@ -127,6 +127,7 @@ async function loadGallery() {
 
     if (!response.ok) {
       console.error("No autorizado o error del Backend");
+      galleryDiv.innerHTML = `<p style="color: red; font-weight: bold;">Error: No autorizado. Verifica que el token sea correcto.</p>`;
       return;
     }
 
