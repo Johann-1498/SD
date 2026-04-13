@@ -2,19 +2,8 @@ services:
   frontend:
     build: .
     environment:
-      - SERVER_URL=${SERVER_URL:-https://flask.rvaldiviase.me}
+      - SERVER_URL=${SERVER_URL:-http://localhost:5000}
       - API_TOKEN=${API_TOKEN:-admin123}
-    restart: always
-    networks:
-      - traefik_proxy
-    labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.flask-frontend.rule=Host(`gallery.rvaldiviase.me`)"
-      - "traefik.http.routers.flask-frontend.entrypoints=websecure"
-      - "traefik.http.routers.flask-frontend.tls=true"
-      - "traefik.http.routers.flask-frontend.tls.certresolver=cloudflare"
-      - "traefik.http.services.flask-frontend.loadbalancer.server.port=80"
-
-networks:
-  traefik_proxy:
-    external: true
+    ports:
+      - "8080:80"
+    restart: unless-stopped
