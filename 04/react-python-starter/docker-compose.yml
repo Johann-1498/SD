@@ -11,7 +11,7 @@ services:
     environment:
       HOST: 0.0.0.0
       PORT: 3000
-      VITE_API_BASE_URL: https://api.unsa.rvaldiviase.me
+      VITE_API_BASE_URL: https://unsa-api.rvaldiviase.me
     volumes:
       - ./client/src/:/opt/client/src/
       - "/app/node_modules"
@@ -67,7 +67,7 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.docker.network=traefik_proxy"
-      - "traefik.http.routers.unsa-backend.rule=Host(`api.unsa.rvaldiviase.me`)"
+      - "traefik.http.routers.unsa-backend.rule=Host(`unsa-api.rvaldiviase.me`)"
       - "traefik.http.routers.unsa-backend.entrypoints=websecure"
       - "traefik.http.routers.unsa-backend.tls=true"
       - "traefik.http.routers.unsa-backend.tls.certresolver=cloudflare"
