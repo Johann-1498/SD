@@ -1,0 +1,16 @@
+name: Run e2e tests
+on: [pull_request]
+
+jobs:
+  test-app:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Update submodules
+        run: make update-submodules
+      - name: Start App
+        run: make run
+      - name: Seed database
+        run: make db-seed
+      - name: Run e2e tests
+        run: npm ci && npm test
