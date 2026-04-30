@@ -1,0 +1,3 @@
+[console_scripts]
+SimpleTelnetMail = SimpleTelnetMail:send
+
