@@ -1,0 +1,15 @@
+[2026-05-03 08:42:27] SERVER: Started on 127.0.0.1:65432
+[2026-05-03 08:42:40] CONNECTION: ('127.0.0.1', 63989) connected
+[2026-05-03 08:42:40] USER: cliente_01 registered from ('127.0.0.1', 63989)
+[2026-05-03 08:42:48] CONNECTION: ('127.0.0.1', 63990) connected
+[2026-05-03 08:42:48] USER: cliente_02 registered from ('127.0.0.1', 63990)
+[2026-05-03 08:42:52] CONNECTION: ('127.0.0.1', 63991) connected
+[2026-05-03 08:42:52] USER: cliente_03 registered from ('127.0.0.1', 63991)
+[2026-05-03 08:43:12] MESSAGE: cliente_01 from ('127.0.0.1', 63989): Hola, que tal? les habla el cliente 1
+[2026-05-03 08:43:25] MESSAGE: cliente_02 from ('127.0.0.1', 63990): Holaa, cliente 2
+[2026-05-03 08:43:29] MESSAGE: cliente_03 from ('127.0.0.1', 63991): cliente 3
+[2026-05-03 08:43:44] MESSAGE: cliente_01 from ('127.0.0.1', 63989): Buenos díasss, soy el cliente 1
+[2026-05-03 08:44:05] MESSAGE: cliente_03 from ('127.0.0.1', 63991): Saludos, soy el cliente 3
+[2026-05-03 08:44:24] MESSAGE: cliente_02 from ('127.0.0.1', 63990): Y yo el cliente 2, mucho gusto
+[2026-05-03 08:44:35] ERROR: [WinError 10054] Se ha forzado la interrupción de una conexión existente por el host remoto
+[2026-05-03 08:44:37] ERROR: [WinError 10054] Se ha forzado la interrupción de una conexión existente por el host remoto
