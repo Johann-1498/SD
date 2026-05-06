@@ -13,6 +13,7 @@ services:
       - traefik_proxy
     labels:
       - "traefik.enable=true"
+      - "traefik.docker.network=traefik_proxy"
       # Redirección HTTP a HTTPS a cargo de Traefik y definición del router HTTPS para RabbitMQ
       - "traefik.http.routers.rabbitmq-panel.rule=Host(`rmq.rvaldiviase.me`)"
       - "traefik.http.routers.rabbitmq-panel.entrypoints=websecure"
@@ -44,6 +45,7 @@ services:
       - traefik_proxy
     labels:
       - "traefik.enable=true"
+      - "traefik.docker.network=traefik_proxy"
       # Redirección HTTP a HTTPS a cargo de Traefik y definición del router HTTPS
       # NOTA: Cambia este Host por el subdominio real que usarás para esta aplicación
       - "traefik.http.routers.rabbitmq-backend.rule=Host(`rabbit.rvaldiviase.me`)"
