@@ -61,7 +61,7 @@ class RpcClient(object):
         self.rpc_queue = rpc_queue
         self.connection = pika.BlockingConnection(pika.ConnectionParameters(host=rabbitmq_host))
         self.channel = self.connection.channel()
-        result = self.channel.queue_declare(exclusive=True)
+        result = self.channel.queue_declare(queue='', exclusive=True)
         self.callback_queue = result.method.queue
         thread = threading.Thread(target=self._process_data_events)
         thread.setDaemon(True)
