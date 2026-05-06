@@ -33,7 +33,7 @@ services:
 
   flask_app:
     build: .
-    command: gunicorn --bind 0.0.0.0:5000 Flask-examples.pika_async_rpc_example:app
+    command: gunicorn --chdir Flask-examples --bind 0.0.0.0:5000 pika_async_rpc_example:app
     environment:
       - PYTHONUNBUFFERED=1
       - RABBITMQ_HOST=rabbitmq
