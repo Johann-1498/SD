@@ -75,8 +75,9 @@ class RpcClient(object):
 
         It is important that we lock the thread each time we check for events.
         """
-        self.channel.basic_consume(self._on_response, no_ack=True,
-                                   queue=self.callback_queue)
+        self.channel.basic_consume(queue=self.callback_queue,
+                                   on_message_callback=self._on_response, 
+                                   auto_ack=True)
         while True:
             with self.internal_lock:
                 self.connection.process_data_events()
