@@ -3,8 +3,8 @@ import requests
 import time
 
 def make_request(client_id):
-    url = f"http://127.0.0.1:5000/rpc_call/mensaje_cliente_{client_id}"
-    print(f"Cliente {client_id} enviando request...")
+    url = f"https://rabbit.rvaldiviase.me/rpc_call/mensaje_cliente_{client_id}"
+    print(f"Cliente {client_id} enviando request a {url}...")
     start_time = time.time()
     try:
         response = requests.get(url)

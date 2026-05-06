@@ -131,7 +131,8 @@ def rpc_call(payload):
     return rpc_client.queue[corr_id]
 
 
+rpc_client = RpcClient('rpc_queue')
+
 if __name__ == '__main__':
-    rpc_client = RpcClient('rpc_queue')
     app.run()
 
