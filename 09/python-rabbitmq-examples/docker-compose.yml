@@ -1,0 +1,59 @@
+version: '3.8'
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - default
+      - traefik_proxy
+    labels:
+      - "traefik.enable=true"
+      # Redirección HTTP a HTTPS a cargo de Traefik y definición del router HTTPS para RabbitMQ
+      - "traefik.http.routers.rabbitmq-panel.rule=Host(`rmq.rvaldiviase.me`)"
+      - "traefik.http.routers.rabbitmq-panel.entrypoints=websecure"
+      - "traefik.http.routers.rabbitmq-panel.tls=true"
+      - "traefik.http.routers.rabbitmq-panel.tls.certresolver=cloudflare"
+      - "traefik.http.services.rabbitmq-panel.loadbalancer.server.port=15672"
+
+  rpc_server:
+    build: .
+    command: python rpc_server.py
+    environment:
+      - PYTHONUNBUFFERED=1
+      - RABBITMQ_HOST=rabbitmq
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+
+  flask_app:
+    build: .
+    command: gunicorn --bind 0.0.0.0:5000 Flask-examples.pika_async_rpc_example:app
+    environment:
+      - PYTHONUNBUFFERED=1
+      - RABBITMQ_HOST=rabbitmq
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    networks:
+      - default
+      - traefik_proxy
+    labels:
+      - "traefik.enable=true"
+      # Redirección HTTP a HTTPS a cargo de Traefik y definición del router HTTPS
+      # NOTA: Cambia este Host por el subdominio real que usarás para esta aplicación
+      - "traefik.http.routers.rabbitmq-backend.rule=Host(`rabbit.rvaldiviase.me`)"
+      - "traefik.http.routers.rabbitmq-backend.entrypoints=websecure"
+      - "traefik.http.routers.rabbitmq-backend.tls=true"
+      - "traefik.http.routers.rabbitmq-backend.tls.certresolver=cloudflare"
+      - "traefik.http.services.rabbitmq-backend.loadbalancer.server.port=5000"
+
+networks:
+  default:
+    # Red por defecto para que los contenedores rabbitmq, rpc_server y flask_app se comuniquen entre sí
+  traefik_proxy:
+    external: true
