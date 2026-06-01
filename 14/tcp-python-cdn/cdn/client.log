@@ -1,0 +1,12 @@
+Client: starting socket to load balancer
+Client: starting to communicate
+Client: received 127.0.0.1:33001
+Client: stopping socket to load balancer
+Client: starting socket to prefered server
+Client: starting to communicate
+SEND   12345 0 ACK=N SYN=Y FIN=N
+RECV   12346 512 ACK=Y  SYN=N FIN=N
+SEND   12346 512 ACK=Y  SYN=N FIN=Y
+RECV   12347 529 ACK=Y  SYN=N FIN=N
+SEND   12347 529 ACK=Y  SYN=N FIN=Y
+Client: stopping socket to prefered server

@@ -1,0 +1,252 @@
+Avaliable Servers from Log: ['127.0.0.1:33001']
+[+] New thread started for pinging the servers
+---
+LoadBalancer: starting socket
+LoadBalancer: socket listening
+PingThread: 127.0.0.1:33001 preference=2.69
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 2.686691669320377}
+---
+PingThread: 127.0.0.1:33001 preference=0.10
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 0.10076666997823243}
+---
+PingThread: 127.0.0.1:33001 preference=0.90
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 0.9012083343501823}
+---
+PingThread: 127.0.0.1:33001 preference=0.09
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 0.09126666797480236}
+---
+PingThread: 127.0.0.1:33001 preference=1.34
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 1.3405666662341293}
+---
+PingThread: 127.0.0.1:33001 preference=1.11
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 1.1122833311674185}
+---
+PingThread: 127.0.0.1:33001 preference=1.12
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 1.1160833334239821}
+[+] New thread started for 127.0.0.1, 61473
+Request from 127.0.0.1 for <URL>. Redirecting to 127.0.0.1:33001. Preference 1.1160833334239821.
+Response from 127.0.0.1:33001 sending request to 127.0.0.1.
+[-] Thread ended for 127.0.0.1, 61473
+---
+PingThread: 127.0.0.1:33001 preference=1.27
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 1.2706166671705432}
+---
+PingThread: 127.0.0.1:33001 preference=1.34
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 1.343591667440099}
+---
+PingThread: 127.0.0.1:33001 preference=0.10
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 0.10326666476127382}
+---
+PingThread: 127.0.0.1:33001 preference=1.99
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 1.9863250005679827}
+---
+PingThread: 127.0.0.1:33001 preference=1.18
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 1.1800166685134172}
+---
+PingThread: 127.0.0.1:33001 preference=1.42
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 1.4224833333476756}
+---
+PingThread: 127.0.0.1:33001 preference=1.14
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 1.142975001130253}
+---
+PingThread: 127.0.0.1:33001 preference=0.10
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 0.09506666780604671}
+---
+PingThread: 127.0.0.1:33001 preference=0.92
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 0.9190249984385446}
+---
+PingThread: 127.0.0.1:33001 preference=1.35
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 1.3479749977705069}
+---
+PingThread: 127.0.0.1:33001 preference=2.95
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 2.947675001147824}
+---
+PingThread: 127.0.0.1:33001 preference=1.83
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 1.8308833338475476}
+---
+PingThread: 127.0.0.1:33001 preference=1.49
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 1.491333333736596}
+---
+PingThread: 127.0.0.1:33001 preference=1.07
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 1.0688999997607123}
+---
+PingThread: 127.0.0.1:33001 preference=1.13
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 1.1280166654614732}
+---
+PingThread: 127.0.0.1:33001 preference=1.65
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 1.6451666670036502}
+---
+PingThread: 127.0.0.1:33001 preference=0.08
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 0.07858333022644122}
+---
+PingThread: 127.0.0.1:33001 preference=2.46
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 2.457683331158478}
+---
+PingThread: 127.0.0.1:33001 preference=2.73
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 2.728183336633568}
+---
+PingThread: 127.0.0.1:33001 preference=0.09
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 0.08753333531785756}
+---
+PingThread: 127.0.0.1:33001 preference=1.19
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 1.190458337077871}
+---
+PingThread: 127.0.0.1:33001 preference=1.23
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 1.232241668427984}
+---
+PingThread: 127.0.0.1:33001 preference=1.47
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 1.4656416678917594}
+---
+PingThread: 127.0.0.1:33001 preference=1.10
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 1.1016916687367484}
+---
+PingThread: 127.0.0.1:33001 preference=4.14
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 4.14482500248899}
+---
+PingThread: 127.0.0.1:33001 preference=2.11
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 2.111316665832419}
+---
+PingThread: 127.0.0.1:33001 preference=1.44
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 1.4419666695175692}
+---
+PingThread: 127.0.0.1:33001 preference=0.08
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 0.0782416658087944}
+---
+PingThread: 127.0.0.1:33001 preference=3.42
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 3.423241665586829}
+---
+PingThread: 127.0.0.1:33001 preference=0.15
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 0.15187499957391992}
+---
+PingThread: 127.0.0.1:33001 preference=0.09
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 0.0925833325406226}
+---
+PingThread: 127.0.0.1:33001 preference=2.09
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 2.089016665801561}
+---
+PingThread: 127.0.0.1:33001 preference=0.09
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 0.09465000039199367}
+---
+PingThread: 127.0.0.1:33001 preference=2.59
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 2.587791665670617}
+---
+PingThread: 127.0.0.1:33001 preference=2.50
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 2.50015832959131}
+---
+PingThread: 127.0.0.1:33001 preference=0.09
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 0.09121666516875848}
+---
+PingThread: 127.0.0.1:33001 preference=1.83
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 1.829433332507809}
+---
+PingThread: 127.0.0.1:33001 preference=0.87
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 0.870974998785338}
+---
+PingThread: 127.0.0.1:33001 preference=1.30
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 1.2997416658132959}
+---
+PingThread: 127.0.0.1:33001 preference=0.16
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 0.1616583322174847}
+---
+PingThread: 127.0.0.1:33001 preference=0.13
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 0.12526666735842204}
+---
+PingThread: 127.0.0.1:33001 preference=0.13
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 0.13465833035297692}
+---
+PingThread: 127.0.0.1:33001 preference=1.50
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 1.5003250009613112}
+---
+PingThread: 127.0.0.1:33001 preference=1.59
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 1.5912166660806786}
+---
+PingThread: 127.0.0.1:33001 preference=1.28
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 1.2768583328579552}
+---
+PingThread: 127.0.0.1:33001 preference=0.15
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 0.15146666798197353}
+---
+PingThread: 127.0.0.1:33001 preference=1.18
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 1.1822166682880682}
+---
+PingThread: 127.0.0.1:33001 preference=1.55
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 1.5500666656104538}
+---
+PingThread: 127.0.0.1:33001 preference=2.34
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 2.3351166673819534}
+---
+PingThread: 127.0.0.1:33001 preference=1.04
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 1.0427499995178853}
+---
+PingThread: 127.0.0.1:33001 preference=1.69
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 1.689283330051694}
+---
+PingThread: 127.0.0.1:33001 preference=0.13
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 0.13380833358193436}
+---
+PingThread: 127.0.0.1:33001 preference=0.14
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 0.14263333287090063}
+---
+PingThread: 127.0.0.1:33001 preference=2.14
+PingThread: Server Preferences are Updated
+PingThread: {'127.0.0.1:33001': 2.135916666399377}
