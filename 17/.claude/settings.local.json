@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install *)",
+      "Bash(python main.py)",
+      "Bash(python -c \"from app import app; print\\('OK'\\)\")",
+      "Bash(python app.py)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" http://localhost:5000/)",
+      "Bash(curl -s -X POST http://localhost:5000/run)",
+      "Bash(python -c ' *)",
+      "Bash(curl -s -X POST http://localhost:5000/run -v)",
+      "Bash(curl -s http://localhost:5000/state)",
+      "Bash(python -c \"import sys, json; d=json.load\\(sys.stdin\\); print\\('backend:', d['backend'], '| products:', len\\(d['products']\\), '| stock:', len\\(d['stock']\\), '| queue_unfinished:', d['queue_unfinished']\\)\")",
+      "Bash(timeout 3 curl -s -N http://localhost:5000/events)"
+    ]
+  }
+}

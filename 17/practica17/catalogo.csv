@@ -1,0 +1,8 @@
+sku,name,price,warehouse,quantity,channel,message
+P001,Teclado Mecanico,79.90,LIMA,150,email,Nuevo stock Teclado Mecanico
+P002,Mouse Optico,25.50,AREQUIPA,300,email,Nuevo stock Mouse Optico
+P001,Teclado Mecanico,79.90,AREQUIPA,40,email,Reposicion Teclado
+P003,Monitor 24,189.00,LIMA,25,sms,Promocion Monitor
+P004,Webcam HD,59.99,CUSCO,80,email,Nuevo stock Webcam
+P005,SSD 1TB,99.00,LIMA,60,email,SSD disponible
+P002,Mouse Optico,25.50,LIMA,120,sms,Promocion Mouse
